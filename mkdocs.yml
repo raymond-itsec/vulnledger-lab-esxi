@@ -7,6 +7,9 @@ theme:
   name: terminal
   palette: dark
 
+extra_css:
+  - css/extra.css
+
 nav:
   - Overview: index.md
   - Prerequisites: 01-prerequisites.md

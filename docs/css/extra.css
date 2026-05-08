@@ -1,0 +1,45 @@
+/*
+ * Amber-green-on-black palette overlay for mkdocs-terminal.
+ * Layers on top of the `dark` palette set in mkdocs.yml.
+ */
+:root {
+  --background-color: #000000;
+  --font-color: #7fff5f;
+  --invert-font-color: #000000;
+  --primary-color: #7fff5f;
+  --secondary-color: #4fc23f;
+  --error-color: #ff5555;
+  --progress-bar-background: #002a00;
+  --progress-bar-fill: #7fff5f;
+  --block-background-color: #001100;
+  --tile-background-color: #001100;
+  --code-bg-color: #001a00;
+}
+
+/* Selection highlight in the same family. */
+::selection {
+  background-color: #7fff5f;
+  color: #000000;
+}
+
+/* Make the terminal-prompt site name banner match. */
+.terminal-prompt::before {
+  color: #7fff5f;
+}
+
+/* Code blocks: use a slightly different green for inline code so it
+ * stands out against body text without changing the green family. */
+code {
+  color: #b8ff8f;
+}
+
+/* Links: stay in the amber-green family but slightly brighter so
+ * they're distinguishable from body text without being neon. */
+a, a:visited {
+  color: #b8ff8f;
+}
+
+a:hover {
+  color: #ffffff;
+  background-color: #002a00;
+}
