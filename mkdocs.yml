@@ -1,0 +1,24 @@
+site_name: VulnLedger Lab - ESXi recipe
+site_url: https://raymond-itsec.github.io/vulnledger-lab-esxi/
+repo_url: https://github.com/raymond-itsec/vulnledger-lab-esxi
+repo_name: raymond-itsec/vulnledger-lab-esxi
+
+theme:
+  name: terminal
+  palette: dark
+
+nav:
+  - Overview: index.md
+  - Prerequisites: 01-prerequisites.md
+  - Build the OVA: 02-build-the-ova.md
+  - Deploy to ESXi: 03-deploy-to-esxi.md
+  - Verify: 04-verify.md
+  - Hand off to VulnLedger: 05-handoff-to-vulnledger.md
+  - Cleanup: 06-cleanup.md
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - toc:
+      permalink: true
